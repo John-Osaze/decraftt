@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("../../fonts/helvetica/Helvetica.woff");
+}
+
+@font-face {
+  font-family: "Helvetica Bold";
+  src: url("../../fonts/helvetica/Helvetica-Bold.woff");
+}
+
+@font-face {
+  font-family: "Helvetica Oblique";
+  src: url("../../fonts/helvetica/Helvetica-Oblique.woff");
+}
+
+@font-face {
+  font-family: "Helvetica Rounded Bold";
+  src: url("../../fonts/helvetica/helvetica-rounded-bold-5871d05ead8de.woff");
+}

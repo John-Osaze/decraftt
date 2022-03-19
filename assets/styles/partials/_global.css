@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: var(--helvetica);
+}
+
+body {
+  font-family: var(--helvetica) sans-serif;
+  background-color: var(--white);
+  overflow: hidden;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+::selection{
+  color: var(--white);
+  background: var(--primary);
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* section {
+  padding: 5rem 0;
+} */
+
+.container {
+  width: 100%;
+  /* max-width: 100rem; */
+  margin: 0 auto;
+  padding: 0 5rem;
+}

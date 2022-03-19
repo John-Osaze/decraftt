@@ -1,0 +1,287 @@
+/* Imported CSS */
+@import url(partials/_variables.css);
+@import url(partials/_fonts.css);
+@import url(partials/_global.css);
+/* Imported CSS */
+
+
+.backdrop {
+  display: none;
+}
+
+header {
+  width: 100%;
+  padding: 1.75rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background: var(--white);
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-inner .nav-brand img {
+  width: 16rem;
+  min-width: 16rem;
+  max-width: 16rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul .nav-item {
+  margin-right: 3.5rem;
+}
+
+nav ul .nav-item a {
+  font-size: 1.5rem;
+  color: var(--black);
+  display: block;
+  position: relative;
+  padding-right: 0.4rem;
+}
+
+nav ul .nav-item a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  width: 100%;
+  height: 0.2rem;
+  background: var(--primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+nav ul .nav-item a:hover {
+  color: var(--primary);
+}
+
+nav ul .nav-item a:hover::after {
+  transform: scaleX(1);
+}
+
+nav ul .nav-item:last-child {
+  margin-right: 0;
+}
+
+nav ul .nav-item:last-child a {
+  padding-right: 0;
+}
+
+nav ul .nav-item:last-child a::after {
+  display: none;
+}
+
+nav ul .nav-item:last-child a > img {
+  width: 21.5px;
+  height: 21.5px;
+}
+
+nav ul .nav-item.active a {
+  color: var(--primary);
+  transition: all 0.4s ease;
+}
+
+nav ul .nav-item.active a::after {
+  transform: scaleX(0.45);
+  transition: all 0.4s ease;
+}
+
+nav ul .nav-item.active a:hover::after {
+  transform: scaleX(1);
+}
+
+.menu-btn .menu-bar {
+  display: none;
+}
+
+.hero-inner {
+  margin-top: 5.5rem;
+  padding: 7rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-inner .info-area {
+  max-width: 55rem;
+  position: relative;
+}
+
+.hero-inner .info-area img {
+  position: absolute;
+  width: 10rem;
+  top: -2rem;
+  left: -2.5rem;
+  z-index: -1;
+  opacity: 50%;
+}
+
+.hero-inner .info-area h1 {
+  font: normal bold 5rem/6rem var(--helveticaBold);
+  margin-bottom: 2rem;
+  color: var(--black);
+}
+
+.hero-inner .info-area p {
+  line-height: 2.25rem;
+  max-width: 45rem;
+  color: var(--black);
+}
+
+.hero-inner .info-area .email-btn {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.hero-inner .info-area .email-btn .icon-link a {
+  display: block;
+  background: #fff;
+  box-shadow: 0 0 1.4rem #3030302a;
+  padding: 2rem;
+  border-radius: 50%;
+  position: relative;
+  color: var(--primary);
+}
+
+.hero-inner .info-area .email-btn .icon-link a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 0.75rem solid #e9e9e9;
+  animation: pulse 1.5s ease infinite;
+}
+
+.hero-inner .info-area .email-btn .text-link a {
+  margin-left: 1rem;
+  font: normal normal 1.6rem var(--helvetica);
+  color: var(--primary);
+}
+
+.countdown-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.countdown-area .top-img-elem{
+  position: absolute;
+  width: 9rem;
+  top: -6rem;
+  z-index: -1;
+  left: 6rem;
+}
+
+.countdown-area .bottom-img-elem{
+  position: absolute;
+  width: 5rem;
+  bottom: -8rem;
+  z-index: -1;
+  right: 3rem;
+}
+
+.countdown-area .count-box {
+  /* padding: 4rem 2.5rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 12rem;
+  height: 15rem;
+  box-shadow: 0.5rem 0.5rem 1rem #2525252a;
+  background: var(--lowWhite);
+  border-radius: 1.5rem;
+  text-align: center;
+  margin: 0 1rem;
+}
+
+.countdown-area .count-box h3 {
+  font: normal normal 4.5rem/7rem var(--helveticaBold);
+  color: var(--black);
+}
+
+.countdown-area .count-box span {
+  font: normal normal 1.5rem var(--helvetica);
+  color: var(--black);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+  position: relative;
+}
+
+footer .img-element {
+  position: absolute;
+  left: 12rem;
+  width: 15.5rem;
+  top: -2rem;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+footer .footer-inner {
+  text-align: center;
+  position: relative;
+}
+
+.footer-inner .social-links a {
+  margin: 0 0.75rem;
+  font-size: 1.6rem;
+  color: transparent;
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.footer-inner .copyright {
+  margin-top: 2.5rem;
+  color: var(--black);
+}
+
+.video-bg video {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+/* Keyframes */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.65);
+  }
+}
+
+/* JS Classes */
+.header-active{
+  box-shadow: 0 5px 15px var(--shadowColor);
+  transition: box-shadow .4s ease;
+}

@@ -1,0 +1,41 @@
+:root {
+  /* Color Variables */
+  --primary: #2143ca;
+  --accent: #7641f4;
+  --tertiary: #ffa500;
+  --white: #ffffff;
+  --black: #161616;
+  --fadeWhite: #f1f1f1;
+  --overlay: #161616d0;
+  --lowWhite: #ffffff85;
+  --shadowColor: #49494918;
+
+  /* Font Variables */
+  --helvetica: Helvetica, sans-serif;
+  --helveticaBold: "Helvetica Bold", sans-serif;
+  --helveticaOblique: "Helvetica Oblique", sans-serif;
+  --helveticaRounded: "Helvetica Rounded Bold", sans-serif;
+
+  /* Gradient Variables */
+  --gradient: linear-gradient(135deg, #2143ca 0%, #7641f4 100%);
+  --altGradient: linear-gradient(90deg, #7641f4 0%, #2134ca 100%);
+
+  /* Shadow Variables */
+  --boxshadow: 15px 15px 30px #1414142a;
+  --dropshadow: 15px 15px 30px #1414142a;
+
+  /* Screen Size Variables */
+  --mobile: 400px;
+  --tablet: 768px;
+  --laptop: 996px;
+  --desktop: 1200px;
+}
+
+.dark-mode{
+  --white: #161616;
+  --black: #ffffff;
+  --fadeWhite: #252525;
+  --overlay: #00000065;
+  --lowWhite: #16161685;
+  --shadowColor: #aaaaaa21;
+}
